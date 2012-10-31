@@ -1,0 +1,58 @@
+<html>
+    <head>
+		<title>Travel Testing</title>
+        <meta name="decorator" content="atl.admin">
+    </head>
+<body>
+<table width="100%" cellspacing="0" cellpadding="10" border="0">
+    <tbody>
+        <tr>
+            <td>
+                <table class="jiraform maxWidth">
+                    <tbody>
+                        <tr>
+                            <td class="jiraformheader">
+                                <h3 class="formtitle">Travel</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="jiraformbody">
+                                <form method="post" action="WorkflowTravelAction!travel.jspa">
+                                    <p>
+                                        <table>
+                                            <tr>
+                                                <td>User</td>
+                                                <td><input type="text" name="user"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Issue key</td>
+                                                <td><input type="text" name="issueKey"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>To status name</td>
+                                                <td><input type="text" name="to"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Some field name</td>
+                                                <td><input type="text" name="somefieldName"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Some field value</td>
+                                                <td><input type="text" name="somefieldValue"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><input type="submit" value="Apply"></td>
+                                            </tr>
+                                        </table>
+                                    </p>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

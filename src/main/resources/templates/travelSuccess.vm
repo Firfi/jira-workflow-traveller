@@ -1,0 +1,27 @@
+<p>action succesful</p>
+#if($validResults)
+    <p>valid results : </p>
+    <ul>
+    #foreach ($validResult in $validResults)
+        <li>$validResult.issue.key $validResult.issue.status</li>
+    #end
+    </ul>
+
+#end
+
+#if($errorResults)
+
+    <p>error results : </p>
+    <ul>
+    #foreach ($errorResult in $errorResults)
+        <li>$errorResult.issue.key $errorResult.issue.status</li>
+        <ul>
+        #foreach ($error in $errorResult.errorCollection.errorMessages)
+            <li>$error</li>
+        #end
+        </ul>
+    #end
+    </ul>
+
+
+#end
